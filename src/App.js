@@ -6,7 +6,14 @@ import './App.css';
 function App() {
   return (
 <>
-    Lets GOO!
+   <div className='App'> 
+   
+   
+   <div className='container'>
+   
+   
+   </div>
+   </div>
 </>
   );
   
