@@ -64,7 +64,22 @@ body {
   }
 }
 
+.container {
+  width: 100%;
+}
+
 .mockups {
-  background-image: url("/images/bg-intro-mobile.svg");
+  background-image: url("./Components/images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  background-size: cover;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+img {
+  height: 50%;
 }
 /*# sourceMappingURL=App.css.map */

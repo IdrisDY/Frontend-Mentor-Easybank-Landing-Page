@@ -42,7 +42,19 @@ body{
      transform: rotate(360deg);
    }
  }
- .mockups{
-   background-image: url('/images/bg-intro-mobile.svg');
+ .container{
+   width: 100%;
  }
+ .mockups{
+   background-image: url('./Components/images/bg-intro-mobile.svg') ;
+background-repeat: no-repeat;
+// object-fit: fill;
+object-position: center;
+background-size: cover;
+width: fit-content;
+  }
+  img{
+    height: 50%;
+  }
+
  
