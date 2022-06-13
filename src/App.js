@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LandingContent from './Components/Landing-Content';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
    
    
    <div className='container'>
-   
+   <LandingContent/>
    
    </div>
    </div>
