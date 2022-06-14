@@ -65,21 +65,119 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .mockups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mockup-div {
   background-image: url("./Components/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
-  -o-object-position: center;
-     object-position: center;
   background-size: cover;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-img {
-  height: 50%;
+.mockup-img {
+  width: 90%;
+}
+
+.intro-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.intro-div .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head-text {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.intro-text-body {
+  margin: 0 auto;
+  font-size: 1rem;
+  max-width: 80%;
+  line-height: 1.3em;
+}
+
+.req-btn {
+  background: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+  background: linear-gradient(to left, #2bb7da, #31d35c);
+  border: none;
+  width: 50%;
+  margin: 1em auto;
+  border-radius: 1em;
+  padding: 1em 2em;
+}
+
+@media (min-width: 990px) {
+  .mockups {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .mockups .mockup-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-size: 150% 90%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-clip: border-box;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-image: url("./Components/images/bg-intro-desktop.svg");
+  }
+  .mockups .mockup-div .mockup-img {
+    position: relative;
+    bottom: 0;
+    top: 3em;
+    right: -4.5em;
+  }
+  .mockups .head-text {
+    font-size: 2rem;
+  }
+  .mockups .intro-div {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=App.css.map */
