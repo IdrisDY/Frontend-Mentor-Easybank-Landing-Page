@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import LandingContent from './Components/Landing-Content';
-
+import Navbar from './Components/Navbar';
+import Latest from './Components/Latest'
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
    
    
    <div className='container'>
-   <LandingContent/>
-   
+  <Navbar/>
+  <Latest/> 
    </div>
    </div>
 </>
