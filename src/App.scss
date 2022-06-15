@@ -1,6 +1,9 @@
 $darkblue:(hsl(233, 26%, 24%));
 $brightcyan:hsl(192, 70%, 51%);
 $limegreen:hsl(136, 65%, 51%);
+$grayishblue:hsl(233, 8%, 62%);
+$lightgrayishblue:hsl(220, 16%, 96%);
+$verylightgray: hsl(0, 0%, 98%);
 body{
    font-size:18px;
 }
@@ -68,7 +71,8 @@ width: fit-content;
     .intro-content{
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content:center;
+      align-items: center;
     }
   }
 
@@ -77,21 +81,29 @@ width: fit-content;
   margin: 0 auto;
 }
 .intro-text-body{
-  margin: 0 auto;
+  // margin: 0 auto;
   font-size: 1rem;
 max-width: 80%;
-line-height: 1.3em;
+line-height: 1.5em;
+text-align: left;
 }
 .req-btn{
   background: linear-gradient(to left, $brightcyan, $limegreen);
   border: none;
   width: 50%;
-  margin: 1em auto;
+  // margin: 1em auto;
   border-radius:1em;
   padding: 1em 2em;
 }
+.prop-section{
+  background-color: $lightgrayishblue;
+padding: 1em 1em;
+}
+
+
  @media(min-width:990px){
 .mockups{
+  width: fit-content;
   flex-direction: row-reverse;
   .mockup-div{
     display: flex;
@@ -101,9 +113,10 @@ line-height: 1.3em;
     background-size: 150% 90% ;
     // padding:1em 4em ;
     overflow-x: hidden;
-overflow-y: hidden;
+// overflow-y: hidden;
     background-clip: border-box;
   justify-content: flex-end;
+
     background-image: url('./Components/images/bg-intro-desktop.svg') ;
   .mockup-img{
 //     display: flex;
@@ -112,15 +125,54 @@ overflow-y: hidden;
  bottom: 0;
  top: 3em;
  right: -4.5em;
-
 //  right: 0;
+height: auto;
+z-index: 9999;
+
+  }
+  .intro-content{
+justify-content: space-around;
   }
   }
   .head-text{
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: left;
   }
   .intro-div{
     width: 100%;
+    padding: 0 2em;
+
+  }
+}
+.prop-section{
+  padding: 1em 4em;
+  z-index: -99999999;
+  h1,h3{
+    margin: 0;
+    text-align: left;
+  }
+  .sec-row-div{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .props{
+    width: 22%;
+    display: flex;
+    // justify-content: space-evenly;
+    flex-direction: column;
+
+  }
+  .p-props{
+    text-align: left;
+    line-height: 1.5em;
+  }
+  .p-width-adjust{
+    max-width: 70%;
+  }
+  .prop-img{
+width: 30%;
+padding: 1em 0;
   }
 }
  }
