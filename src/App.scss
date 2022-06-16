@@ -6,6 +6,7 @@ $lightgrayishblue:hsl(220, 16%, 96%);
 $verylightgray: hsl(0, 0%, 98%);
 body{
    font-size:18px;
+   font-family: 'Public Sans',sans-serif;
   }
 *{
   margin: 0;
@@ -52,11 +53,17 @@ background-repeat: no-repeat;
 // object-fit: fill;
 background-size: cover;
 width: fit-content;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 99999999;
+
+
   }
   .mockup-img{
     width: 90%;
-    z-index: 99999999;
-    margin: auto;
+    margin-top: -2em;
+    // object-position: center;
   }
   .intro-div{
     display: flex;
@@ -64,6 +71,7 @@ width: fit-content;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding: 0 0 3.5em 0;
     .intro-content{
       display: flex;
       flex-direction: column;
@@ -74,35 +82,55 @@ width: fit-content;
 
 .head-text{
   font-size: 2rem;
-  margin: 0 auto;
+text-align: center;
+color: $darkblue;
+font-weight: 400;
+padding-top: 1em;
+
 }
 .intro-text-body{
   margin: 0 auto;
   font-size: 1rem;
 max-width: 80%;
 line-height: 1.5em;
-// text-align: left;
+text-align: center;
+font-weight: 400;
+padding-top: 1em;
 }
 .req-btn{
   background: linear-gradient(to left, $brightcyan, $limegreen);
   border: none;
   width: 50%;
   margin: 1em auto;
-  border-radius:1em;
+  border-radius:1.8em;
   padding: 1em 2em;
+  color: white;
+  font-family: inherit;
 }
 .prop-section{
   background-color: $lightgrayishblue;
 padding: 1em 1em;
-
+z-index: -999999999;
 .prop-img{
   width: 25%;
-  // padding: 1em 0;
+  padding: 1.5em 0;
     }
+    .p-props{
+text-align: center;    
+padding: 1.5em 0;
+font-weight: 400;
+}
+h1{
+  text-align: center;    
+padding: .5em 0;
+font-weight: 400;
+color: $darkblue;
+}
     .props{
 display: flex;
 flex-direction: column;
-align-items: center;    }
+align-items: center;   
+justify-content: center; }
       
     
 }
@@ -123,13 +151,14 @@ align-items: center;    }
   .footer-li, h6{
     color: white;
     padding: .5em 0;
+    font-weight: 300;
   }
   .footer-col1{
 // display: flex;
 padding: 1em 0;
 }
 .social-logo{
-  padding: 1em 0 .5em .8em;
+  padding: 1.5em 0 .5em .8em;
   }
   .footer-nav ul{
 display: flex;
@@ -145,13 +174,25 @@ margin: 0;
   color: white;
 }
 
-.h6{
-font-size: 2rem; 
-min-width: 100%; }
-h3{
-  margin: 0;
-  text-align: left;
+h6{
+// font-size: 2rem; 
+min-width: 100%; 
+font-weight: 300;
+// color: $darkblue;
+text-align: center;
 }
+h3{
+  // margin: 0;
+  // text-align: left;
+  // font-weight: 400;
+}
+.footer-col1,.footer-col4{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  padding: 1em 1em;
+  }
+
 
 }
   
@@ -164,7 +205,7 @@ h3{
     width: 100%;
     position: relative;
        // margin-right: -10%;
-    background-size: 150% 90% ;
+    background-size: 150% 100% ;
     // padding:1em 4em ;
     overflow-x: hidden;
 // overflow-y: hidden;
@@ -187,30 +228,35 @@ z-index: 9999;
   .intro-content{
 justify-content: space-between;
 align-items:flex-start;
-
   }
   }
   .head-text{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
+    font-weight: 500;
+    max-width: 70%;
   }
   .intro-text-body{
 margin: 0 ;
 text-align: left;
+max-width: 100%;
+padding: 1em 0;
   }
   .req-btn{
 margin: 0;
 // text-align: left;
+width: 45%;
+// padding: 2em 3em;
   }
 
   .intro-div{
     width: 100%;
-    padding: 0 5em;
+    padding: 3em 5em;
 
   }
 }
 .prop-section{
-  padding: 1em 4em;
+  padding: 2em 4em;
   z-index: -99999999;
   h1,h3{
     margin: 0;
@@ -222,22 +268,24 @@ margin: 0;
 
   }
   .props{
-    width: 22%;
+    width: 23%;
     display: flex;
     // justify-content: space-evenly;
     flex-direction: column;
+    align-items: flex-start;
 
   }
   .p-props{
     text-align: left;
-    line-height: 1.5em;
+    line-height: 1.3em;
   }
   .p-width-adjust{
     max-width: 70%;
+    padding-top: .5em;
   }
   .prop-img{
 width: 30%;
-padding: 1em 0;
+padding: 1em 0 1.5em 0 ;
   }
 }
 .footer-container{
@@ -253,11 +301,12 @@ background: $darkblue;
   .footer-col4{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: flex-end;
-    padding: 1em 3em 1em 1em;
+    padding: 1em 1.5em 1em 1em;
 }
 .btn-resize{
-  width: 45%;
+  max-width: 50%;
   padding: 1em 1.5em;
   border-radius: 1.8em;
   margin: 0;
@@ -268,7 +317,14 @@ background: $darkblue;
   .footer-nav ul{
     padding: 1em 0 ;
     }
-  
+  h6{
+    text-align: right;
+  }
+//   h1{
+// padding-top: 6em;  
+// border: 5px solid black;
+// }
+
 }
  }
 
@@ -423,7 +479,11 @@ background: $darkblue;
 }
 h3{
  
+  font-family: inherit;
   font-size: 100%;
+  color: $darkblue;
+  font-weight: 400;
+
 }
 p{
   font-size: 83%;
