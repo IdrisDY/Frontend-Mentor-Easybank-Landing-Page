@@ -71,8 +71,8 @@ width: fit-content;
     .intro-content{
       display: flex;
       flex-direction: column;
-      justify-content:center;
-      align-items: center;
+      // justify-content:center;
+      // align-items: flex;
     }
   }
 
@@ -81,23 +81,72 @@ width: fit-content;
   margin: 0 auto;
 }
 .intro-text-body{
-  // margin: 0 auto;
+  margin: 0 auto;
   font-size: 1rem;
 max-width: 80%;
 line-height: 1.5em;
-text-align: left;
+// text-align: left;
 }
 .req-btn{
   background: linear-gradient(to left, $brightcyan, $limegreen);
   border: none;
   width: 50%;
-  // margin: 1em auto;
+  margin: 1em auto;
   border-radius:1em;
   padding: 1em 2em;
 }
 .prop-section{
   background-color: $lightgrayishblue;
 padding: 1em 1em;
+.prop-img{
+  width: 25%;
+  // padding: 1em 0;
+    }
+  
+}
+.footer-nav ul{
+  list-style: none;
+  padding: 0;
+  }
+  .footer-container{
+    padding: 2em 2em 1em 2em;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 3fr;
+  background: $darkblue;
+  .easybank-logo{
+    filter: invert(100%) sepia(60%) saturate(13%) hue-rotate(242deg) brightness(103%) contrast(104%);
+  // fill: white;
+  }
+  .footer-li, h6{
+    color: white;
+    padding: .5em 0;
+  }
+  .footer-col1{
+// display: flex;
+padding: 1em 0;
+}
+.social-logo{
+  padding: 1em 0 .5em .8em;
+  }
+  .footer-nav ul{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0;
+}
+.btn-resize{
+  width: 70%;
+  padding: 1em 1.5em;
+  border-radius: 1.8em;
+  color: white;
+}
+
+.h6{
+font-size: 2rem; 
+min-width: 100%; }
+
+  
 }
 
 
@@ -131,16 +180,27 @@ z-index: 9999;
 
   }
   .intro-content{
-justify-content: space-around;
+justify-content: space-between;
+align-items:flex-start;
+
   }
   }
   .head-text{
     font-size: 3rem;
     text-align: left;
   }
+  .intro-text-body{
+margin: 0 ;
+text-align: left;
+  }
+  .req-btn{
+margin: 0;
+// text-align: left;
+  }
+
   .intro-div{
     width: 100%;
-    padding: 0 2em;
+    padding: 0 5em;
 
   }
 }
@@ -174,5 +234,35 @@ justify-content: space-around;
 width: 30%;
 padding: 1em 0;
   }
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 3fr;
+background: $darkblue;
+.footer-col1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 1em;
+  }
+  .footer-col4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1em 3em 1em 1em;
+}
+.btn-resize{
+  width: 45%;
+  padding: 1em 1.5em;
+  border-radius: 1.8em;
+  margin: 0;
+}
+.social-logo{
+  padding: 1em 0 .5em .3em;
+  }
+  .footer-nav ul{
+    padding: 1em 0 ;
+    }
+  
 }
  }

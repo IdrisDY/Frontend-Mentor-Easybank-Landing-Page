@@ -118,12 +118,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .head-text {
@@ -132,10 +126,10 @@ body {
 }
 
 .intro-text-body {
+  margin: 0 auto;
   font-size: 1rem;
   max-width: 80%;
   line-height: 1.5em;
-  text-align: left;
 }
 
 .req-btn {
@@ -143,6 +137,7 @@ body {
   background: linear-gradient(to left, #2bb7da, #31d35c);
   border: none;
   width: 50%;
+  margin: 1em auto;
   border-radius: 1em;
   padding: 1em 2em;
 }
@@ -150,6 +145,67 @@ body {
 .prop-section {
   background-color: #f3f4f6;
   padding: 1em 1em;
+}
+
+.prop-section .prop-img {
+  width: 25%;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container {
+  padding: 2em 2em 1em 2em;
+  background: #2d314d;
+}
+
+.footer-container .easybank-logo {
+  -webkit-filter: invert(100%) sepia(60%) saturate(13%) hue-rotate(242deg) brightness(103%) contrast(104%);
+          filter: invert(100%) sepia(60%) saturate(13%) hue-rotate(242deg) brightness(103%) contrast(104%);
+}
+
+.footer-container .footer-li, .footer-container h6 {
+  color: white;
+  padding: .5em 0;
+}
+
+.footer-container .footer-col1 {
+  padding: 1em 0;
+}
+
+.footer-container .social-logo {
+  padding: 1em 0 .5em .8em;
+}
+
+.footer-container .footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.footer-container .btn-resize {
+  width: 70%;
+  padding: 1em 1.5em;
+  border-radius: 1.8em;
+  color: white;
+}
+
+.footer-container .h6 {
+  font-size: 2rem;
+  min-width: 100%;
 }
 
 @media (min-width: 990px) {
@@ -185,16 +241,27 @@ body {
     z-index: 9999;
   }
   .mockups .mockup-div .intro-content {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .mockups .head-text {
     font-size: 3rem;
     text-align: left;
   }
+  .mockups .intro-text-body {
+    margin: 0;
+    text-align: left;
+  }
+  .mockups .req-btn {
+    margin: 0;
+  }
   .mockups .intro-div {
     width: 100%;
-    padding: 0 2em;
+    padding: 0 5em;
   }
   .prop-section {
     padding: 1em 4em;
@@ -231,6 +298,51 @@ body {
   }
   .prop-section .prop-img {
     width: 30%;
+    padding: 1em 0;
+  }
+  .footer-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1.5fr 1fr 3fr;
+        grid-template-columns: 1.5fr 1.5fr 1fr 3fr;
+    background: #2d314d;
+  }
+  .footer-container .footer-col1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em 1em;
+  }
+  .footer-container .footer-col4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 1em 3em 1em 1em;
+  }
+  .footer-container .btn-resize {
+    width: 45%;
+    padding: 1em 1.5em;
+    border-radius: 1.8em;
+    margin: 0;
+  }
+  .footer-container .social-logo {
+    padding: 1em 0 .5em .3em;
+  }
+  .footer-container .footer-nav ul {
     padding: 1em 0;
   }
 }

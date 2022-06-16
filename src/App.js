@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import LandingContent from './Components/Landing-Content';
 import EasybankProps from './Components/EasybankProps';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -12,8 +13,6 @@ function App() {
    
    
    <div className='container'>
-   <LandingContent/>
-   <EasybankProps></EasybankProps>
    </div>
    </div>
 </>
