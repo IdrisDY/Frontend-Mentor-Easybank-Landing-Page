@@ -15,10 +15,10 @@ function App() {
    
    
    <div className='container'>
-  {/* <Navbar/> */}
+  <Navbar/>
   <LandingContent/>
   <EasybankProps/>
-  {/* <Latest/>  */}
+   <Latest/>
   <Footer/>
    </div>
    </div>

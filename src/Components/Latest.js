@@ -7,7 +7,7 @@ import confetti from './images/image-confetti.jpg'
 const Latest= ()=>{
 
     return(
-         <div><h1 className="arti">Latest Articles</h1>
+         <div className="cast"><h1 className="arti">Latest Articles</h1>
 
          <div className="card">
            <div className="cards"><div  className="pic"><img className="image" src={money}/></div>
