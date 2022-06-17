@@ -61,12 +61,21 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mockup-img {
   width: 90%;
   z-index: 99999999;
-  margin: auto;
+  margin-top: -2em;
 }
 
 .intro-div {
@@ -84,6 +93,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  padding: 0 0 3.5em 0;
 }
 
 .intro-div .intro-content {
@@ -99,6 +109,9 @@ body {
 .head-text {
   font-size: 2rem;
   text-align: center;
+  color: #2d314d;
+  font-weight: 400;
+  padding-top: 1em;
 }
 
 .intro-text-body {
@@ -106,6 +119,9 @@ body {
   font-size: 1rem;
   max-width: 80%;
   line-height: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 1em;
 }
 
 .req-btn {
@@ -114,8 +130,10 @@ body {
   border: none;
   width: 50%;
   margin: 1em auto;
-  border-radius: 1em;
+  border-radius: 1.8em;
   padding: 1em 2em;
+  color: white;
+  font-family: inherit;
 }
 
 .prop-section {
@@ -125,17 +143,20 @@ body {
 
 .prop-section .prop-img {
   width: 25%;
-  padding: 1em 0;
+  padding: 1.5em 0;
 }
 
 .prop-section .p-props {
   text-align: center;
-  padding: 1em 0;
+  padding: 1.5em 0;
+  font-weight: 400;
 }
 
 .prop-section h1 {
   text-align: center;
   padding: .5em 0;
+  font-weight: 400;
+  color: #2d314d;
 }
 
 .prop-section .props {
@@ -179,7 +200,7 @@ body {
 }
 
 .footer-container .social-logo {
-  padding: 1em 0 .5em .8em;
+  padding: 1.5em 0 .5em .8em;
 }
 
 .footer-container .footer-nav ul {
@@ -206,14 +227,24 @@ body {
   color: white;
 }
 
-.footer-container .h6 {
-  font-size: 2rem;
+.footer-container h6 {
   min-width: 100%;
+  font-weight: 300;
+  text-align: center;
 }
 
-.footer-container h3 {
-  margin: 0;
-  text-align: left;
+.footer-container .footer-col1, .footer-container .footer-col4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 1em;
 }
 
 @media (min-width: 990px) {
@@ -259,6 +290,7 @@ body {
   .mockups .head-text {
     font-size: 3rem;
     text-align: left;
+    font-weight: 500;
   }
   .mockups .intro-text-body {
     margin: 0;
@@ -266,13 +298,14 @@ body {
   }
   .mockups .req-btn {
     margin: 0;
+    width: 40%;
   }
   .mockups .intro-div {
     width: 100%;
     padding: 0 5em;
   }
   .prop-section {
-    padding: 1em 4em;
+    padding: 2em 4em;
     z-index: -99999999;
   }
   .prop-section h1, .prop-section h3 {
@@ -302,14 +335,15 @@ body {
   }
   .prop-section .p-props {
     text-align: left;
-    line-height: 1.5em;
+    line-height: 1.3em;
   }
   .prop-section .p-width-adjust {
     max-width: 70%;
+    padding-top: .5em;
   }
   .prop-section .prop-img {
     width: 30%;
-    padding: 1em 0;
+    padding: 1em 0 1.5em 0;
   }
   .footer-container {
     display: -ms-grid;
@@ -339,6 +373,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: .5em;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -355,6 +393,9 @@ body {
   }
   .footer-container .footer-nav ul {
     padding: 1em 0;
+  }
+  .footer-container h6 {
+    text-align: right;
   }
 }
 
@@ -505,8 +546,10 @@ body {
 }
 
 h3 {
-  font-family: Arial;
+  font-family: inherit;
   font-size: 100%;
+  color: #2d314d;
+  font-weight: 400;
 }
 
 p {
