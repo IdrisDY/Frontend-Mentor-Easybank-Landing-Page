@@ -15,8 +15,11 @@ function App() {
    
    
    <div className='container'>
-  <Navbar/>
-  <Latest/> 
+  {/* <Navbar/> */}
+  <LandingContent/>
+  <EasybankProps/>
+  {/* <Latest/>  */}
+  <Footer/>
    </div>
    </div>
 </>

@@ -6,13 +6,14 @@ $lightgrayishblue:hsl(220, 16%, 96%);
 $verylightgray: hsl(0, 0%, 98%);
 body{
    font-size:18px;
-
+  }
 *{
   margin: 0;
 }
 .cov{
   position: fixed;
   width: 100%;
+  z-index: 9999999999;
 }
 .navbar{
   height: 95px;
@@ -34,18 +35,13 @@ body{
 }
 .div3{
   width: 30%;
- 
- @keyframes App-logo-spin {
-   from {
-     transform: rotate(0deg);
-   }
-   to {
-     transform: rotate(360deg);
-   }
- }
+  background-color: white;
+
+}
  .container{
    width: fit-content;
  }
+ 
  .mockups{
    display: flex;
    flex-direction: column;
@@ -59,6 +55,8 @@ width: fit-content;
   }
   .mockup-img{
     width: 90%;
+    z-index: 99999999;
+    margin: auto;
   }
   .intro-div{
     display: flex;
@@ -96,11 +94,17 @@ line-height: 1.5em;
 .prop-section{
   background-color: $lightgrayishblue;
 padding: 1em 1em;
+
 .prop-img{
   width: 25%;
   // padding: 1em 0;
     }
-  
+    .props{
+display: flex;
+flex-direction: column;
+align-items: center;    }
+      
+    
 }
 .footer-nav ul{
   list-style: none;
@@ -111,6 +115,7 @@ padding: 1em 1em;
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr 3fr;
   background: $darkblue;
+
   .easybank-logo{
     filter: invert(100%) sepia(60%) saturate(13%) hue-rotate(242deg) brightness(103%) contrast(104%);
   // fill: white;
@@ -143,11 +148,13 @@ margin: 0;
 .h6{
 font-size: 2rem; 
 min-width: 100%; }
-
-  
+h3{
+  margin: 0;
+  text-align: left;
 }
 
-
+}
+  
  @media(min-width:990px){
 .mockups{
   width: fit-content;
@@ -264,9 +271,8 @@ background: $darkblue;
   
 }
  }
-  background-color: white;
-}
-.easylogo{
+
+ .easylogo{
   margin-top: 40px;
   margin-left: 50%;
   position: absolute;
@@ -371,12 +377,13 @@ background: $darkblue;
   height: 380px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns:1fr ;
   margin-top: 5%;
+  background-color: $lightgrayishblue;
 }
 @media(max-width:990px){
   .card{
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: 1fr;
   }
   .arti{
     margin-left: 14%;
