@@ -5,6 +5,8 @@ import LandingContent from './Components/Landing-Content';
 import EasybankProps from './Components/EasybankProps';
 import Footer from './Components/Footer';
 
+import Navbar from './Components/Navbar';
+import Latest from './Components/Latest'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
    
    
    <div className='container'>
+  <Navbar/>
+  <Latest/> 
    </div>
    </div>
 </>
