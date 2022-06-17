@@ -1,5 +1,6 @@
 body {
   font-size: 18px;
+  font-family: 'Public Sans',sans-serif;
 }
 
 * {
@@ -97,7 +98,7 @@ body {
 
 .head-text {
   font-size: 2rem;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .intro-text-body {
@@ -124,6 +125,17 @@ body {
 
 .prop-section .prop-img {
   width: 25%;
+  padding: 1em 0;
+}
+
+.prop-section .p-props {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.prop-section h1 {
+  text-align: center;
+  padding: .5em 0;
 }
 
 .prop-section .props {
@@ -137,6 +149,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-nav ul {
@@ -281,6 +296,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .prop-section .p-props {
     text-align: left;

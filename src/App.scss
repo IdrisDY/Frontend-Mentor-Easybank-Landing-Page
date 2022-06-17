@@ -6,6 +6,7 @@ $lightgrayishblue:hsl(220, 16%, 96%);
 $verylightgray: hsl(0, 0%, 98%);
 body{
    font-size:18px;
+   font-family: 'Public Sans',sans-serif;
   }
 *{
   margin: 0;
@@ -74,7 +75,7 @@ width: fit-content;
 
 .head-text{
   font-size: 2rem;
-  margin: 0 auto;
+text-align: center;
 }
 .intro-text-body{
   margin: 0 auto;
@@ -97,12 +98,22 @@ padding: 1em 1em;
 
 .prop-img{
   width: 25%;
-  // padding: 1em 0;
+  padding: 1em 0;
     }
+    .p-props{
+text-align: center;    
+padding: 1em 0;
+}
+h1{
+  text-align: center;    
+padding: .5em 0;
+
+}
     .props{
 display: flex;
 flex-direction: column;
-align-items: center;    }
+align-items: center;   
+justify-content: center; }
       
     
 }
@@ -226,6 +237,7 @@ margin: 0;
     display: flex;
     // justify-content: space-evenly;
     flex-direction: column;
+    align-items: flex-start;
 
   }
   .p-props{
