@@ -11,6 +11,13 @@ body{
 *{
   margin: 0;
 }
+li{
+  cursor: pointer;
+}
+li:hover{
+  border-bottom: 1px solid black;
+  transition: ease-in-out 2s;
+}
 .cov{
   position: fixed;
   width: 100%;
@@ -106,6 +113,10 @@ padding-top: 1em;
   padding: 1em 2em;
   color: white;
   font-family: inherit;
+  cursor: pointer;
+}
+.req-btn:hover{
+  background:black ;
 }
 .prop-section{
   background-color: $lightgrayishblue;
@@ -256,7 +267,7 @@ width: 45%;
   }
 }
 .prop-section{
-  padding: 2em 4em;
+  padding: 2em 5em;
   z-index: -99999999;
   h1,h3{
     margin: 0;
@@ -313,6 +324,7 @@ background: $darkblue;
 }
 .social-logo{
   padding: 1em 0 .5em .3em;
+  cursor: pointer;
   }
   .footer-nav ul{
     padding: 1em 0 ;
@@ -348,9 +360,12 @@ background: $darkblue;
 }
 #menu{
   display: none;
+  cursor: pointer;
 }
 #close{
   display: none;
+  cursor: pointer;
+
 }
 .grad{
   height: 50px;
@@ -400,18 +415,26 @@ background: $darkblue;
       margin: auto;
       box-shadow: 1px 1px 344px 7px rgb(0, 5, 29);
       margin-top: 20px;
+      ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+      }
       
     }
    
     #lis2{
       display: block;
       list-style: none;
-      margin-left: 29.2%;
-      padding-top: 0.8em;
+      // margin-left: 29.2%;
+      // padding-top: 0.8em;
+      margin: auto;
       top: 10px;
     }
     .sub2{
       margin-top: 18px;
+      color: $darkblue;
     }
     #close{
       position: absolute;
@@ -425,42 +448,56 @@ background: $darkblue;
 
 
 .arti{
+  color: $darkblue;
+font-weight: 400;
+padding: 0 2.5em;}
+.h3-new-font{
 
-  margin-left: 41.4px;
+font-size: 1rem;
 }
+
 .card{
-  width: 98%;
-  height: 380px;
+  // width: 98%;
+  max-width: 85%;
+
+  // height: 380px;
   margin: auto;
   display: grid;
-  grid-template-columns:repeat(4,1fr) ;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
   margin-top: 5%;
  
 }
 .cast{
   width: fit-content;
-  background-color:$lightgrayishblue;
+  background-color:$verylightgray;
   margin: auto;
-  margin-bottom: 150px;
-  margin-top: 40px;
-
+  padding: 2.5em 1em;
+min-height: fit-content;
 }
 @media(max-width:990px){
   .card{
     grid-template-columns: 1fr;
   }
   .arti{
-    margin-left: 25px;
     font-size: 170%;
-  }
+    padding: 0;
+    color: $darkblue;
+text-align: center;  }
   .cast{
-    margin-bottom: 1700px;
+    // margin-bottom: 1700px;
+    padding:4em 0 0 0;
   }
+  .white{
+    // margin-left: 16px;
+border-radius: 0 0 .5em .5em;  }
+  
 }
 
 .cards{
-  width: 90%;
-  margin: 26px;
+  height: 100%;
+
+  // margin: 26px;
+  padding: .4em ;
   
   border-radius: 6.4px;
 }
@@ -468,15 +505,28 @@ background: $darkblue;
   .cards{
     margin-bottom: 70px;
   }
+  .parag{
+    line-height: 6em;
+    font-size: .8rem;
+    font-weight: 300;
+    width: 100%;
+  }
+  
 }
 .pic{
   
-  height: 180px;
+  // height: 180px;
 }
+ #picture1{
+   height: 7.25em;
+ }
 .white{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.8em;
   background-color: white;
-  height: fit-content;
-}
+border-bottom: 1em;}
 h3{
  
   font-family: inherit;
@@ -491,14 +541,20 @@ p{
   font-weight: 600;
 }
 .white{
-  margin-left: 16px;
+  // margin-left: 16px;
+  padding: 1em .7em 1em .7em;
+  border-radius: 0 0 .5em .5em;  
+
 }
 .image{
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 .parag{
-  line-height: 23px;
+  line-height: 1.5em;
+  font-size: .8rem;
+  font-weight: 300;
+  width: 100%;
 }
