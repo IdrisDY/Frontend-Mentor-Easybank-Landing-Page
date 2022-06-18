@@ -70,11 +70,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 99999999;
 }
 
 .mockup-img {
   width: 90%;
-  z-index: 99999999;
   margin-top: -2em;
 }
 
@@ -139,6 +139,7 @@ body {
 .prop-section {
   background-color: #f3f4f6;
   padding: 1em 1em;
+  z-index: -999999999;
 }
 
 .prop-section .prop-img {
@@ -193,6 +194,7 @@ body {
 .footer-container .footer-li, .footer-container h6 {
   color: white;
   padding: .5em 0;
+  font-weight: 300;
 }
 
 .footer-container .footer-col1 {
@@ -263,7 +265,7 @@ body {
     display: flex;
     width: 100%;
     position: relative;
-    background-size: 150% 90%;
+    background-size: 150% 100%;
     overflow-x: hidden;
     background-clip: border-box;
     -webkit-box-pack: end;
@@ -288,21 +290,24 @@ body {
             align-items: flex-start;
   }
   .mockups .head-text {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
     font-weight: 500;
+    max-width: 70%;
   }
   .mockups .intro-text-body {
     margin: 0;
     text-align: left;
+    max-width: 100%;
+    padding: 1em 0;
   }
   .mockups .req-btn {
     margin: 0;
-    width: 40%;
+    width: 45%;
   }
   .mockups .intro-div {
     width: 100%;
-    padding: 0 5em;
+    padding: 3em 5em;
   }
   .prop-section {
     padding: 2em 4em;
@@ -321,7 +326,7 @@ body {
             justify-content: space-between;
   }
   .prop-section .props {
-    width: 22%;
+    width: 23%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -376,14 +381,13 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    gap: .5em;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding: 1em 3em 1em 1em;
+    padding: 1em 1.5em 1em 1em;
   }
   .footer-container .btn-resize {
-    width: 45%;
+    max-width: 50%;
     padding: 1em 1.5em;
     border-radius: 1.8em;
     margin: 0;

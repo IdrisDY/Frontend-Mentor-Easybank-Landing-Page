@@ -56,11 +56,12 @@ width: fit-content;
 display: flex;
 justify-content: center;
 align-items: center;
+z-index: 99999999;
+
 
   }
   .mockup-img{
     width: 90%;
-    z-index: 99999999;
     margin-top: -2em;
     // object-position: center;
   }
@@ -109,7 +110,7 @@ padding-top: 1em;
 .prop-section{
   background-color: $lightgrayishblue;
 padding: 1em 1em;
-
+z-index: -999999999;
 .prop-img{
   width: 25%;
   padding: 1.5em 0;
@@ -150,6 +151,7 @@ justify-content: center; }
   .footer-li, h6{
     color: white;
     padding: .5em 0;
+    font-weight: 300;
   }
   .footer-col1{
 // display: flex;
@@ -203,7 +205,7 @@ align-items: center;
     width: 100%;
     position: relative;
        // margin-right: -10%;
-    background-size: 150% 90% ;
+    background-size: 150% 100% ;
     // padding:1em 4em ;
     overflow-x: hidden;
 // overflow-y: hidden;
@@ -226,27 +228,30 @@ z-index: 9999;
   .intro-content{
 justify-content: space-between;
 align-items:flex-start;
-
   }
   }
   .head-text{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
     font-weight: 500;
+    max-width: 70%;
   }
   .intro-text-body{
 margin: 0 ;
 text-align: left;
+max-width: 100%;
+padding: 1em 0;
   }
   .req-btn{
 margin: 0;
 // text-align: left;
-width: 40%;
+width: 45%;
+// padding: 2em 3em;
   }
 
   .intro-div{
     width: 100%;
-    padding: 0 5em;
+    padding: 3em 5em;
 
   }
 }
@@ -263,7 +268,7 @@ width: 40%;
 
   }
   .props{
-    width: 22%;
+    width: 23%;
     display: flex;
     // justify-content: space-evenly;
     flex-direction: column;
@@ -297,12 +302,11 @@ background: $darkblue;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: .5em;
     align-items: flex-end;
-    padding: 1em 3em 1em 1em;
+    padding: 1em 1.5em 1em 1em;
 }
 .btn-resize{
-  width: 45%;
+  max-width: 50%;
   padding: 1em 1.5em;
   border-radius: 1.8em;
   margin: 0;
