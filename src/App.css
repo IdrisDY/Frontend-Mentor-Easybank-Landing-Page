@@ -138,6 +138,8 @@ li:hover {
   color: #2d314d;
   font-weight: 400;
   padding-top: 1em;
+  max-width: 286px;
+  margin: 0 auto;
 }
 
 .intro-text-body {
@@ -303,8 +305,8 @@ li:hover {
   .mockups .mockup-div .mockup-img {
     width: 40%;
     position: absolute;
-    top: 5em;
-    right: -3em;
+    top: 0em;
+    right: -4em;
     z-index: 99999999999;
     -o-object-fit: cover;
        object-fit: cover;
@@ -324,6 +326,7 @@ li:hover {
     text-align: left;
     font-weight: 500;
     max-width: 70%;
+    margin: 0;
   }
   .mockups .intro-text-body {
     margin: 0;
@@ -340,7 +343,7 @@ li:hover {
     padding: 7em 3em 4em 5em;
   }
   .prop-section {
-    padding: 3em 5em;
+    padding: 4em 5em;
     z-index: -999999;
   }
   .prop-section h1, .prop-section h3 {
