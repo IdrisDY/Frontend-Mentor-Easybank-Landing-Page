@@ -17,7 +17,7 @@ const Navbar = () =>{
                   <li className="sub">Contact</li><li className="sub">Blog</li>
                   <li className="sub">Careers</li>
                   </ul></div>
-               <div className="div3"><div className="grad">Request Invite</div>
+               <div className="div3"><button className=" nav-btn req-btn">Request Invite</button>
           {show? <img src={menu} onClick={()=>setShow(!show)} id ="menu"/>:null}
           
           {!show?  <img src={close} onClick={()=>setShow(!show)}  id ="close"/>:null}

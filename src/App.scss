@@ -38,16 +38,23 @@ li:hover{
  }
  .div2{
   width: 50%;
- ;
   background-color: white;
 }
 .div3{
   width: 30%;
   background-color: white;
-
+display: flex;
+justify-content: center;
+align-items: center;
+padding: .5em 0 .5em 2em;
+button{
+  height: 50%;
+  width: 55%;
+}
 }
  .container{
    width: fit-content;
+   overflow: hidden;
  }
  
  .mockups{
@@ -57,20 +64,16 @@ li:hover{
  .mockup-div{
    background-image: url('./Components/images/bg-intro-mobile.svg') ;
 background-repeat: no-repeat;
-// object-fit: fill;
 background-size: cover;
 width: fit-content;
 display: flex;
 justify-content: center;
 align-items: center;
 z-index: 99999999;
-
-
   }
   .mockup-img{
     width: 90%;
     margin-top: -2em;
-    // object-position: center;
   }
   .intro-div{
     display: flex;
@@ -82,8 +85,6 @@ z-index: 99999999;
     .intro-content{
       display: flex;
       flex-direction: column;
-      // justify-content:center;
-      // align-items: flex;
     }
   }
 
@@ -93,7 +94,6 @@ text-align: center;
 color: $darkblue;
 font-weight: 400;
 padding-top: 1em;
-
 }
 .intro-text-body{
   margin: 0 auto;
@@ -116,7 +116,7 @@ padding-top: 1em;
   cursor: pointer;
 }
 .req-btn:hover{
-  background:black ;
+  background:$darkblue ;
 }
 .prop-section{
   background-color: $lightgrayishblue;
@@ -142,8 +142,6 @@ display: flex;
 flex-direction: column;
 align-items: center;   
 justify-content: center; }
-      
-    
 }
 .footer-nav ul{
   list-style: none;
@@ -151,13 +149,10 @@ justify-content: center; }
   }
   .footer-container{
     padding: 2em 2em 1em 2em;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr 3fr;
   background: $darkblue;
 
   .easybank-logo{
     filter: invert(100%) sepia(60%) saturate(13%) hue-rotate(242deg) brightness(103%) contrast(104%);
-  // fill: white;
   }
   .footer-li, h6{
     color: white;
@@ -165,7 +160,6 @@ justify-content: center; }
     font-weight: 300;
   }
   .footer-col1{
-// display: flex;
 padding: 1em 0;
 }
 .social-logo{
@@ -186,16 +180,9 @@ margin: 0;
 }
 
 h6{
-// font-size: 2rem; 
 min-width: 100%; 
 font-weight: 300;
-// color: $darkblue;
 text-align: center;
-}
-h3{
-  // margin: 0;
-  // text-align: left;
-  // font-weight: 400;
 }
 .footer-col1,.footer-col4{
   display: flex;
@@ -208,46 +195,24 @@ align-items: center;
   
  @media(min-width:990px){
 .mockups{
-  // width: fit-content;
   flex-direction: row-reverse;
   position: relative;
-  // justify-content: flex-start;
-  // align-items: flex-start;
   .mockup-div{
     display: flex;
     width: 60%;
-    // float: left;
-    // top: 1em;
-    // right: 0;
-    // left: 50%;
-    // z-index: 999999;
-    height: 100%;
-min-height: 414px;
-       // margin-right: -10%;
-    background-size:200% 150%;
-    // padding:1em 4em ;
-//     overflow-x: hidden;
-// overflow-y: hidden;
+    background-size:150% 110%;
     background-clip: border-box;
   justify-content: flex-end;
 
     background-image: url('./Components/images/bg-intro-desktop.svg') ;
   .mockup-img{
-//     display: flex;
-overflow-x: none;
-overflow-y: none;
-
  width: 40%;
  position: absolute;
-//  bottom: -7em;
  top: 5em;
-right: -4em;
-//  right: 0;
-// height: auto;
+ right: -3em;
 z-index: 99999999999;
-// height: 70vh;
-
-
+object-fit: cover;
+object-position: right;
   }
   .intro-content{
 justify-content: space-between;
@@ -270,17 +235,14 @@ padding: 1em 0;
 margin: 0;
 width: 45%;
   }
-
   .intro-div{
     width: 50%;
     padding: 7em 3em 4em 5em ;
-
   }
 }
 .prop-section{
   padding: 3em 5em;
   z-index: -999999;
-
   h1,h3{
     margin: 0;
     text-align: left;
@@ -288,14 +250,12 @@ width: 45%;
   .sec-row-div{
     display: flex;
     justify-content: space-between;
-
   }
   .props{
     width: 23%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
   }
   .p-props{
     text-align: left;
@@ -343,10 +303,8 @@ background: $darkblue;
   h6{
     text-align: right;
   }
-
 }
  }
-
  .easylogo{
   margin-top: 40px;
   margin-left: 50%;
@@ -362,8 +320,8 @@ background: $darkblue;
   padding: 14px;
   font-size: 13.8px;
   color: rgba(0, 0, 0, 0.342);
-  font-family:  sans-serif;
-  font-weight: 550;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
 }
 #menu{
   display: none;
@@ -372,7 +330,6 @@ background: $darkblue;
 #close{
   display: none;
   cursor: pointer;
-
 }
 .grad{
   height: 50px;
@@ -384,7 +341,6 @@ background: $darkblue;
   text-align: center;
   margin-top: 6%;
   margin-left: 42px;
- 
   font-weight: 550;
   font-size: 13.8px;
 }
@@ -392,14 +348,9 @@ background: $darkblue;
 #lis2{
   display: none;
 }
-
-
 @media(max-width:990px){
-
     #menu{
       display: block;
-      margin-top: 30px;
-      margin-left: 50px;
     }
     .easylogo{
       margin-top: 26px;
@@ -408,6 +359,9 @@ background: $darkblue;
       display: none;
     }
     .grad{
+      display: none;
+    }
+    .nav-btn{
       display: none;
       position: relative;
     }
@@ -428,9 +382,7 @@ background: $darkblue;
         flex-direction: column;
         padding: 0;
       }
-      
     }
-   
     #lis2{
       display: block;
       list-style: none;
@@ -443,15 +395,12 @@ background: $darkblue;
     }
     #close{
       position: absolute;
-      padding-left: 53px;
+      padding-left: .7em;
       padding-bottom: 30px;
       top: 29px;
       display: block;
     }
 }
-
-
-
 .arti{
   color: $darkblue;
 font-weight: 400;
@@ -459,7 +408,6 @@ padding: 0 2.5em;}
 .h3-new-font{
 font-size: 1rem;
 }
-
 .card{
   max-width: 85%;
   margin: auto;
@@ -488,9 +436,7 @@ text-align: center;  }
   }
   .white{
 border-radius: 0 0 .5em .5em;  }
-  
 }
-
 .cards{
   height: 100%;
   padding: .4em ; 
@@ -507,7 +453,6 @@ border-radius: 0 0 .5em .5em;  }
     width: 100%;
   }
 }
-
  #picture1{
    height: 7.25em;
  }
@@ -531,10 +476,8 @@ p{
   font-weight: 600;
 }
 .white{
-  // margin-left: 16px;
   padding: 1em .7em 1em .7em;
   border-radius: 0 0 .5em .5em;  
-
 }
 .image{
   min-height: 100%;

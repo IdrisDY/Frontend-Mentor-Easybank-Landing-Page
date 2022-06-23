@@ -46,12 +46,28 @@ li:hover {
 .div3 {
   width: 30%;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5em 0 .5em 2em;
+}
+
+.div3 button {
+  height: 50%;
+  width: 55%;
 }
 
 .container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  overflow: hidden;
 }
 
 .mockups {
@@ -148,7 +164,7 @@ li:hover {
 }
 
 .req-btn:hover {
-  background: black;
+  background: #2d314d;
 }
 
 .prop-section {
@@ -277,9 +293,7 @@ li:hover {
     display: -ms-flexbox;
     display: flex;
     width: 60%;
-    height: 100%;
-    min-height: 414px;
-    background-size: 200% 150%;
+    background-size: 150% 110%;
     background-clip: border-box;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -287,13 +301,15 @@ li:hover {
     background-image: url("./Components/images/bg-intro-desktop.svg");
   }
   .mockups .mockup-div .mockup-img {
-    overflow-x: none;
-    overflow-y: none;
     width: 40%;
     position: absolute;
     top: 5em;
-    right: -4em;
+    right: -3em;
     z-index: 99999999999;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
   }
   .mockups .mockup-div .intro-content {
     -webkit-box-pack: justify;
@@ -437,8 +453,8 @@ li:hover {
   padding: 14px;
   font-size: 13.8px;
   color: rgba(0, 0, 0, 0.342);
-  font-family: sans-serif;
-  font-weight: 550;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
 }
 
 #menu {
@@ -473,8 +489,6 @@ li:hover {
 @media (max-width: 990px) {
   #menu {
     display: block;
-    margin-top: 30px;
-    margin-left: 50px;
   }
   .easylogo {
     margin-top: 26px;
@@ -483,6 +497,9 @@ li:hover {
     display: none;
   }
   .grad {
+    display: none;
+  }
+  .nav-btn {
     display: none;
     position: relative;
   }
@@ -524,7 +541,7 @@ li:hover {
   }
   #close {
     position: absolute;
-    padding-left: 53px;
+    padding-left: .7em;
     padding-bottom: 30px;
     top: 29px;
     display: block;
