@@ -6,10 +6,6 @@ import twitterImg from './images/icon-twitter.svg'
 import pinterestImg from './images/icon-pinterest.svg'
 import youtubeImg from './images/icon-youtube.svg'
 
-
-
-
-
 const Footer = () => {
   return (
     <div className='footer-container'>
@@ -22,23 +18,17 @@ const Footer = () => {
      <img className='social-logo' src= {twitterImg}/>
      <img className='social-logo' src= {pinterestImg}/>
      <img className='social-logo' src= {instaImg}/>
-     
-
-
      </div>
        </div>
+
        <nav className='footer-nav'>
           <ul>
-          
- 
-
-
-
              <li className='footer-li'>About Us</li>
              <li className='footer-li'> Contact</li>
              <li className='footer-li'>  Blog</li>
           </ul>
        </nav>
+
        <nav className='footer-nav'>
        <ul>
              <li className='footer-li'>  Careers</li>
